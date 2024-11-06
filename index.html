@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html><head lang="en"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-5PZ3MK8QVV"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-5PZ3MK8QVV');
+</script>
+    
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>OpenMU -- Open Music Understanding</title>
+
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta property="og:image" content="img/qual_1.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="912">
+    <meta property="og:image:height" content="512">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://openmu_music_understanding.github.io/">
+    <meta property="og:title" content="OpenMU: Your Swiss Army Knife for Music Understanding">
+    <meta property="og:description" content="">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="OpenMU: Your Swiss Army Knife for Music Understanding">
+
+
+    <!-- mirror: F0%9F%AA%9E&lt -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/codemirror.min.css">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="./css/twentytwenty.css">
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/codemirror.min.js"></script>
+    <script src="js/clipboard.min.js"></script>
+    <script src="js/video_comparison.js"></script>
+    <script src="js/app.js"></script>
+    <script src="./js/jquery.twentytwenty.js"></script>
+
+</head>
+
+
+<body>
+    <div class="container" id="header" style="text-align: center; margin: auto;">
+        <div class="row" id="title-row" style="max-width: 100%; margin: 0 auto; display: inline-block">
+            <h2 class="col-md-12 text-center" id="title">
+                <b>OpenMU</b>: Your Swiss Army Knife for Music Understanding<br>
+                <small>
+                    arXiv 2024
+                </small>
+            </h2>
+        </div>
+        <div class="row" id="author-row" style="margin:0 auto;">
+            <div class="col-md-12 text-center" style="display: table; margin:0 auto">
+                <a style="text-decoration:none" href="https://joemzhao.github.io/">
+                    Mengjie Zhao<sup>1</sup>
+                </a>
+                <span style="padding-left: 20px;"></span>
+                <a style="text-decoration:none" href="https://scholar.google.jp/citations?user=iRVT3A8AAAAJ&hl=ja&oi=ao">
+                    Zhi Zhong<sup>1</sup>
+                </a>
+                <span style="padding-left: 20px;"></span>
+                <a style="text-decoration:none" href="https://scholar.google.co.jp/citations?user=gIzJ2sQAAAAJ&hl=ja">
+                    Zhuoyuan Mao<sup>1</sup>
+                </a>
+                <span style="padding-left: 20px;"></span>
+                <a style="text-decoration:none" href="https://scholar.google.jp/citations?user=p27Iqt4AAAAJ&hl=ja">
+                    Shiqi Yang<sup>1</sup>
+                </a>
+                <br>
+                <span style="padding-left: 20px;"></span>
+                <a style="text-decoration:none" href="https://openreview.net/profile?id=~Wei-Hsiang_Liao1">
+                    Wei-Hsiang Liao<sup>2</sup>
+                </a>
+                <span style="padding-left: 20px;"></span>
+                <a style="text-decoration:none" href="https://scholar.google.co.jp/citations?user=_mhxayYAAAAJ&hl=ja">
+                    Shusuke Takahashi<sup>1</sup>
+                </a>
+                
+                <span style="padding-left: 20px;"></span>
+                <a style="text-decoration:none" href="https://scholar.google.co.jp/citations?user=lv41luwAAAAJ&hl=ja">
+                    Hiromi Wakaki<sup>1</sup>
+                </a>
+                <span style="padding-left: 20px;"></span>
+                <a style="text-decoration:none" href="https://www.yukimitsufuji.com">
+                    Yuki Mitsufuji<sup>2,1</sup>
+                </a>
+                <br>
+                <table class="author-table" id="author-table">
+                    <tr>
+                        
+                        <td>
+                            <span style="padding-left: 5px;"></span> <sup>1</sup>Sony Group Corporation
+                        </td>
+                        <td>
+                            <sup>2</sup>Sony AI
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.getElementById('author-row').style.maxWidth = document.getElementById("title-row").clientWidth + 'px';
+    </script>
+    <div class="container" id="main">
+        <div class="row">
+                <div class="col-sm-6 col-sm-offset-3 text-center">
+                    <ul class="nav nav-pills nav-justified">
+                        <li>
+                            <a href="https://arxiv.org/abs/2410.15573" target="_blank">
+                            <img src="./img/paper_image.png" height="60px">
+                                <h4><strong>Paper</strong></h4>
+                            </a>
+                        </li>
+                        <li>
+                            <!-- <a href="" target="_blank"> -->
+                            <a href="https://github.com/mzhaojp22/openmu" target="_blank">
+                                <image src="img/github.png" height="60px">
+                                <h4><strong>Code & Weights</strong></h4>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2"  style="margin-bottom: 5px;">
+                <h4>
+                    <b>Abstract</b>
+                </h4>
+                <div style="width: 90%;">
+                    <!-- <img src="img/motivation_1.png" style="float: right; width: 40%; height: auto; margin-left: 20px;"> -->
+                    <div class="text-justify">
+                        We present OpenMU-Bench, a large-scale benchmark suite for addressing the data scarcity issue in training multimodal language models to understand music. To construct OpenMU-Bench, we leveraged existing datasets and bootstrapped new annotations. OpenMU-Bench also broadens the scope of music understanding by including lyrics understanding and music tool usage. Using OpenMU-Bench, we trained our music understanding model, OpenMU, with extensive ablations, demonstrating that OpenMU outperforms baseline models such as MU-Llama. Both OpenMU and OpenMU-Bench are open-sourced to facilitate future research in music understanding and to enhance creative music production efficiency.
+                    </div>
+                </div>
+                
+                <br>
+            </div>
+        </div>
+
+        <section class="section hero">
+            <div class="container is-full-desktop">
+              <div class="columns is-centered has-text-centered">
+                <div class="column is-max-desktop is-full-mobile">
+                  <h2 id="section_1" align="center" class="title is-3">Music Understanding Examples </h2>
+                  <div class="table-container">
+                    <table class="table" align="center" style="table-layout: fixed;word-break: break-word; width: 100%;">
+                      <thead>
+                          <tr>
+                              <th scope="col" style="min-width: 200px;">Input music clips </th>
+                              <th scope="col" style="min-width: 200px;">Instruction </th>
+                              <th scope="col" style="min-width: 200px;">OpenMU outputs</th>
+                          </tr>
+                      </thead>
+                      <tbody>
+                          <tr><!--000-->
+                            <td><audio controls="controls" style="width: 200px;"><source src="static/audio/gtzan_captioning.wav" />Your browser does not support the audio element.</audio></td>
+                            <td>Give a short and clear description of the clip provided.</td>
+                            <td>This music clip features a fast tempo with a high valence, giving it a lively and positive feel. The energy level is moderate, striking a balance between calmness and excitement. The clip is highly danceable, likely due to its rhythmic stability and strong beat. With elements of jazz and soul genres, the music combines smooth melodies with soulful rhythms, creating a vibrant and engaging sound that is both uplifting and groovy.</td>
+                          </tr>
+                          <br>
+                          <tr><!--001-->
+                            <td><audio controls="controls" style="width: 200px;"><source src="static/audio/gtzan_reasoning.wav" />Your browser does not support the audio element.</audio></td>
+                            <td>How could a musician alter this music clip to make it more danceable?</td>
+                            <td>To make this music clip more danceable, a musician could consider increasing the tempo slightly to create a more upbeat feel. They could also emphasize the rhythm by adding percussive elements like a stronger beat or syncopated patterns to enhance the groove. Additionally, incorporating catchy melodies and repetitive hooks can make the music more engaging for dancing. By adjusting these elements, the musician can transform the track into a more dance-friendly piece.</td>
+                          </tr>
+                          <br>
+                          <tr><!--002-->
+                            <td><audio controls="controls" style="width: 200px;"><source src="static/audio/musicqa_012542.wav" />Your browser does not support the audio element.</audio></td>
+                            <td>Describe the audio</td>
+                            <td>The music clip features a blend of ambient and electronic elements. The prominent instruments include a bass guitar, drums, and synthesizer. The bass provides a deep, rhythmic foundation, while the drums add a driving beat. The synthesizer contributes to the electronic sound palette, adding layers of atmospheric textures. The overall sound is immersive and modern, creating a captivating and dynamic listening experience.</td>
+                          </tr>
+                          <br>
+                          <tr><!--003-->
+                            <td><audio controls="controls" style="width: 200px;"><source src="static/audio/394_00003.flac" />Your browser does not support the audio element.</audio></td>
+                            <td>What type of vocal technique is being used in this music clip?</td>
+                            <td>The vocal technique in this music clip appears to be operatic, characterized by powerful projection, wide range, and dramatic expression commonly found in classical and opera music.</td>
+                          </tr>
+                          <br>
+                          <tr><!--004-->
+                            <td><audio controls="controls" style="width: 200px;"><source src="static/audio/gtzan_captioning.wav" />Your browser does not support the audio element.</audio></td>
+                            <td>What is the tempo of this music clip?</td>
+                            <td>The tempo is [GetAudioTempo() -> 117.6] beats per minute.</td>
+                          </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </section>        
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2" style="margin-bottom: 5px;">
+                    <h4>
+                       <b>Citation</b>
+                    </h4>
+                    <div class="form-group col-md-10 col-md-offset-1">
+                        <textarea id="bibtex" class="form-control" readonly>
+@article{zhao2024openmu,
+	title={OpenMU: Your Swiss Army Knife for Music Understanding},
+	author={Zhao, Mengjie and Zhong, Zhi and Mao, Zhuoyuan and Yang, Shiqi and Liao, Wei-Hsiang and Takahashi, Shusuke and Wakaki, Hiromi and Mitsufuji, Yuki},
+	journal={arXiv preprint arXiv:2410.15573},
+	year={2024}
+  }
+                        </textarea>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                    <h4>
+                        Acknowledgements
+                    </h4>
+                    <p class="text-justify">
+                        The website template was borrowed from <a href="http://mgharbi.com/">Michaël Gharbi</a> and <a href="https://genwarp-nvs.github.io/">GenWarp authors</a>.
+                    </p>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+</body></html>
